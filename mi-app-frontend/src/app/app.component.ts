@@ -1,17 +1,30 @@
 import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card'; // 👈 importa el módulo de PrimeNG
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // solo si aún no lo tienes en main.ts
+import { CardModule } from 'primeng/card';
+import { CommonModule } from '@angular/common';
+import { ToolbarModule } from 'primeng/toolbar';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    CardModule // 👈 agrégalo aquí
+    CardModule,
+    CommonModule,
+    ToolbarModule,
+    ButtonModule,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'mi-app-frontend';
+
+  // Método dentro de la clase
+  openWhatsapp() {
+    window.open('https://wa.me/573042245899?text=Hola,%20quiero%20más%20información%20sobre%20sus%20servicios.', '_blank');
+  }
+  openGmail() {
+  window.location.href = 'c.guayabo@gmail.com?subject=Consulta&body=Hola, quiero más información sobre sus servicios.';
 }
 
+}

@@ -147,3 +147,54 @@ footer {
     transform: translateY(0);
   }
 }
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #007BFF;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.hero-section {
+  background-color: #e3f2fd;
+  text-align: center;
+  padding: 50px 20px;
+  color: #004080;
+}
+
+.card-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004080;
+  color: white;
+  margin-top: 50px;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  padding: 12px;
+  background: #f0f8ff;
+  border-left: 4px solid #007BFF;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.section li span {
+  font-weight: bold;
+  color: #004080;
+}
+

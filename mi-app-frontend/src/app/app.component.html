@@ -1,63 +1,65 @@
-<header>
-    <img src="assets/logo2.png" alt="Energizar Ingeniería Logo" class="logo">
-    <h1>Energizar Ingeniería</h1>
-</header>
+<p-toolbar>
+  <div class="p-toolbar-group-left">
 
-<nav>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+    <span class="title">Energizar Ingeniería</span>
+  </div>
+  <div class="p-toolbar-group-right">
+    <p-button label="Nosotros" class="p-button-text" routerLink="#nosotros"></p-button>
+    <p-button label="Servicios" class="p-button-text" routerLink="#servicios"></p-button>
+    <p-button label="Contacto" class="p-button-text" routerLink="#contacto"></p-button>
+  </div>
+</p-toolbar>
 
-<section class="hero">
-    <h2>Soluciones eléctricas seguras y eficientes</h2>
-    <p>Especialistas en instalaciones eléctricas residenciales, industriales y hospitalarias.</p>
+<section class="hero-section">
+  <h2>Soluciones eléctricas seguras y eficientes</h2>
+  <p>Especialistas en instalaciones eléctricas residenciales, industriales y hospitalarias.</p>
 </section>
 
 <div class="section" id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>Somos una empresa comprometida con la excelencia en el diseño e implementación de infraestructuras eléctricas para diferentes sectores.</p>
+  <h2>Sobre Nosotros</h2>
+  <p>Empresa comprometida con la excelencia en el diseño e implementación de infraestructuras eléctricas para diferentes sectores.</p>
 </div>
+
 <div class="card-container">
-  <p-card styleClass="fadein-card" header="Innovación" subheader="Tecnología avanzada">
+  <p-card header="Innovación" subheader="Tecnología avanzada" styleClass="fadein-card">
     <ng-template pTemplate="content">
-      <i class="pi pi-cog" style="font-size: 2em; color: #007BFF;"></i>
+      <i class="pi pi-cog card-icon"></i>
       <p>Implementamos soluciones modernas y eficientes en instalaciones eléctricas.</p>
     </ng-template>
   </p-card>
-
-  <p-card styleClass="fadein-card" header="Calidad" subheader="Certificación y Garantía">
+  <p-card header="Calidad" subheader="Certificación y Garantía" styleClass="fadein-card">
     <ng-template pTemplate="content">
-      <i class="pi pi-shield" style="font-size: 2em; color: #28a745;"></i>
+      <i class="pi pi-shield card-icon"></i>
       <p>Cada proyecto cumple con los estándares más exigentes de seguridad.</p>
     </ng-template>
   </p-card>
-
-  <p-card styleClass="fadein-card" header="Soporte" subheader="Asistencia continua">
+  <p-card header="Soporte" subheader="Asistencia continua" styleClass="fadein-card">
     <ng-template pTemplate="content">
-      <i class="pi pi-comments" style="font-size: 2em; color: #17a2b8;"></i>
+      <i class="pi pi-comments card-icon"></i>
       <p>Brindamos acompañamiento durante y después de cada instalación.</p>
     </ng-template>
   </p-card>
 </div>
 
 <div class="section" id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <ul>
-        <li><span>Instalaciones eléctricas residenciales:</span> Diseñamos y ejecutamos proyectos eléctricos para hogares, garantizando seguridad y eficiencia energética.</li>
-        <li><span>Infraestructura eléctrica para industrias:</span> Ofrecemos soluciones robustas y personalizadas para satisfacer las necesidades energéticas de fábricas y plantas industriales.</li>
-        <li><span>Sistemas eléctricos para hospitales:</span> Implementamos sistemas confiables para hospitales y centros de salud, asegurando un suministro eléctrico ininterrumpido.</li>
-        <li><span>Mantenimiento y asesoría:</span> Brindamos servicios de mantenimiento preventivo y correctivo, además de asesoría técnica especializada.</li>
-    </ul>
+  <h2>Nuestros Servicios</h2>
+  <ul>
+    <li><span>Instalaciones eléctricas residenciales:</span> Proyectos eléctricos seguros y eficientes para hogares.</li>
+    <li><span>Infraestructura eléctrica industrial:</span> Soluciones personalizadas para fábricas y plantas.</li>
+    <li><span>Sistemas eléctricos hospitalarios:</span> Instalaciones confiables para hospitales.</li>
+    <li><span>Mantenimiento y asesoría:</span> Servicio técnico continuo y especializado.</li>
+  </ul>
 </div>
 
 <div class="section" id="contacto">
-    <h2>Contacto</h2>
-    <p>Email: contactoenergizaringenieria.com</p>
-    <p>Teléfono: +57 3042245899</p>
-    <a class="contact-button" href="https://api.whatsapp.com/send?phone=573042245899&text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20servicios." target="_blank">Contactar por WhatsApp</a>
+  <h2>Contacto</h2>
+  <p-button label="Enviar correo" icon="pi pi-envelope" (click)="openGmail()"></p-button>
+
+  <p>Teléfono: +57 3042245899</p><p-button label="Contactar por WhatsApp" icon="pi pi-whatsapp" (click)="openWhatsapp()"></p-button>
+
+
 </div>
 
-<footer>
-    &copy; 2025 Energizar Ingeniería. Todos los derechos reservados.
+<footer class="footer">
+  &copy; 2025 Energizar Ingeniería. Todos los derechos reservados.
 </footer>
